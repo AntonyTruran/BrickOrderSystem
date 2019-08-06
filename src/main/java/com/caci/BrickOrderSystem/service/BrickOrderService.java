@@ -11,9 +11,10 @@ public class BrickOrderService {
 
 	private BrickOrderRepo repo;
 	private OrderReferenceChecker checker;
+	private BrickOrder entity;
 
-	public String orderCheck(BrickOrder order) {
-		String checkResult = checker.validCheck(order.getOrderReference());
+	public String orderCheck(BrickOrder order) { 
+		String checkResult = checker.validCheck(order);
 		if (checkResult.equals("unique")) {
 			newOrder(order);
 			return order.getOrderReference();

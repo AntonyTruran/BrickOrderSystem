@@ -35,7 +35,7 @@ public class ControllerTest {
 	
 	@Test
 	public void testNewOrder() throws Exception {
-		Mockito.when(service.newOrder((BrickOrder)notNull())).thenReturn("order Created");
+		Mockito.when(service.newOrder((BrickOrder)notNull())).thenReturn(NEW_ORDER);
 		MvcResult result = mockMvc.perform(MockMvcRequestBuilders.post("/newOrder").param("orderReference", "AAA001").param("quantity", "10")).andReturn();
 		assertThat(result.getResponse().getContentAsString().contains("order Created"));
 	}

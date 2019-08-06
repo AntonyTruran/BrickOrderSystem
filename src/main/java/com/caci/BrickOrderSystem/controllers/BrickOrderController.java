@@ -18,6 +18,6 @@ public class BrickOrderController {
 	
 	@PostMapping("/newOrder")
 	public String newOrder(@RequestBody BrickOrder brickOrder) {
-		return null;
+		return service.orderCheck(brickOrder);
 	}
 }
