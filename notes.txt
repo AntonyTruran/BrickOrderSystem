@@ -3,7 +3,9 @@ technologies:
 java maven spring boot, junit mokito
 api stack, dont use microservices and keep it simple, use a kanban board (trello)
 stage 1:
-
+	tests:
+		new order: send an order, communication between layers
+		search order: send request, valid reference, invalid reference, get all
 stage 2:
 
 stage 3:
