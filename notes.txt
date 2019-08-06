@@ -1,0 +1,11 @@
+need to email finished program once done
+technologies:
+java maven spring boot, junit mokito
+api stack, dont use microservices and keep it simple, use a kanban board (trello)
+stage 1:
+
+stage 2:
+
+stage 3:
+
+stage 4:
